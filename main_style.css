@@ -245,11 +245,59 @@ h3 ~ img{
     width:10px;
     height:9px;
 }
+/* ANIMATION */
+#changePhoto{
+    background-image: url(images/paz_250x110103131473.jpg);
+    background-repeat: no-repeat;
+    height:110px;
+    width:273px;
+    margin-top:31px;
+    animation: changePhoto steps(1) 20s infinite;
+}
+@keyframes changePhoto{
+    0%{/*שטחי מסחר*/
+        background-image: url(images/paz_250x110103131473.jpg);
+    }/*טיפז*/
+    33.33%{
+        background-image: url(images/250X110668568400.jpg);
+    }/*click*/
+    66.66%{
+        background-image: url(images/250X110571325734.jpg);
+    }
+}
+.changeText1{
+    height:20px;
+    width:300px;
+}
+.changeText1:after{ 
+    animation: changeLetter steps(1) 20s infinite;
+    display: block;
+    content: "שטחי מסחר פז סנטר";
+    font-size: 14px;
+}
+@keyframes changeLetter {   
+    0%{
+        content: 'שטחי מסחר פז סנטר';
+    }
+    33.33%{
+        content: 'טיפז';
+    }
+    66.66%{
+        content:'yellow click&pick';
+    }
+}
+/* .changeText2{
+    display: none;
+    animation: anim3 steps(1) 30s infinite;
+}
+.changeText3{
+    display: none;
+    animation: anim4 steps(1) 30s infinite;
+} */
 
 .map-container{
     display:flex;
 }
-
 .map-areas{
     display:flex;
     flex-direction: column;

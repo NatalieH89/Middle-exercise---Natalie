@@ -4,10 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>צור קשר</title>
+    <link rel="stylesheet" href="contact.css">
+    <script src="script.js"></script>
+    <title>צור קשר (של נטלי)</title>
 </head>
 <body>
     <div class="container">
+        <!-- HEADER -->
         <header>
             <div class="header">
                 <div class="search-container">
@@ -23,7 +26,7 @@
                         <!-- אייקון של בית -->
                         <li id="home">
                             <a href="index.html" target="_blank">
-                                <img src="images/menu_home_blue.png"/>
+                                <div></div>
                             </a>
                         </li>
                         <li id="sep"></li>
@@ -127,6 +130,117 @@
                 </nav>
             </div>
         </header>
+
+        <main>
+            <div class="row">
+                <div class="col1">
+                    <a href="#">צור קשר</a>
+                </div>
+                <div class="col2">
+                    <div class="col2row1">
+                        <a href="index.html" target="_blank">עמוד הבית</a>
+                        <span>> צור קשר</span>
+                    </div>
+                    <div class="col2row2">
+                        <h1>צור קשר</h1>
+                        <div class="contact-form">
+                            <h1>צור קשר</h1>
+                            <span>ליצירת קשר עם קשרי לקוחות אנא מלאו את הפרטים הבאים ואנו נשמח לעמוד לרשותכם :</span>
+                            <p>* השדות המסומנים בכוכבית (*) הינם שדות חובה</p>
+                            <form>
+                                <div class="contactformfields">                                   
+                                    <div class="fields">
+                                        <div class="line">
+                                            <label for="fname" id="fnamelabel" required>* שם פרטי</label>
+                                            <input id="fname" name="fname" type="text">
+                                        </div>
+                                        <div id="formerror1">שדה חובה</div>
+                                        <div class="line">
+                                            <label for="lname" id="lnamelabel" required>* שם משפחה</label>
+                                            <input id="lname" name="lname" type="text">          
+                                        </div>
+                                        <div id="formerror2">שדה חובה</div>
+                                        <div class="line">
+                                            <label for="phone" id="phonelabel" required>* טלפון</label>
+                                            <input id="phone" name="phone" type="text">
+                                        </div>
+                                        <div id="formerror3">שדה חובה</div>
+                                        <div class="line">
+                                            <label for="email" id="emaillabel" required>* E-mail</label>
+                                                <input id="email" name="email" type="email">
+                                        </div>
+                                        <div id="formerror4">שדה חובה</div>
+                                        <div class="line">
+                                            <label for="freetext"></label>
+                                            <textarea id="freetext" name="freetext" rows="5" cols="20">
+                                            </textarea>
+                                        </div>
+                                    </div>
+                                    <div class="submit">
+                                        <button onclick="formSubmit()" id="submit" type="button">שלח</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="col3">
+                    <div class="officeAddress">
+                        <h1>פרטי יצירת קשר</h1>
+                        <h2>פז חברת נפט בע"מ</h2>
+                        <p>יורו פארק, בניין הולנד<br>
+                        קיבוץ יקום 60972<br>
+                        טל. שירות לקוחות 1-800-774-774<br>
+                        פקס.09-8641714</p>
+                    </div>
+                    <div class="More">
+                        <h1>עוד בפז</h1>
+                        <h2>ליצירת קשר עם דוברות פז</h2>
+                        <a href="https://web.archive.org/web/20170705155824/mailto:%20d@paz.co.il">לחצו כאן >></a>
+                        <h2>רוצים לעבוד בפז?</h2>
+                        <a href="https://web.archive.org/web/20170705155824/http://www.paz.co.il/index.aspx?id=4168">לחצו כאן >></a>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <!-- FOOTER -->
+        <footer>
+            <ul>
+              <li>
+                <a href="https://web.archive.org/web/20170702073345/http://www.facebook.com/YellowPaz" target="_blank">
+                  <img src="images/fb_icon.png"/>
+                </a>
+              </li>
+              <li class="footer-nav-separator"><img src="images/menu_sep.png"/></li>
+              <li><a href="https://web.archive.org/web/20170702073345/http://www.paz.co.il/index.aspx?id=2263">
+                עמוד הבית</a></li>
+                <li class="footer-nav-separator"><img src="images/menu_sep.png"/></li>
+                <li><a href="https://web.archive.org/web/20170702073345/http://www.paz.co.il/index.aspx?id=4386">
+                  מחירונים</a></li>
+                  <li class="footer-nav-separator"><img src="images/menu_sep.png"/></li>
+                  <li><a href="https://web.archive.org/web/20170702073345/http://www.paz.co.il/index.aspx?id=4168">
+                    קריירה</a></li>
+                    <li class="footer-nav-separator"><img src="images/menu_sep.png"/></li>
+                    <li><a href="https://web.archive.org/web/20170702073345/http://www.paz.co.il/index.aspx?id=4244">
+                      תנאי שימוש</a></li>
+                      <li class="footer-nav-separator"><img src="images/menu_sep.png"/></li>
+                      <li><a href="https://web.archive.org/web/20170702073345/http://www.paz.co.il/index.aspx?id=4520">
+                        נגישות</a></li>
+                        <li class="footer-nav-separator"><img src="images/menu_sep.png"/></li>
+                        <li><a href="https://web.archive.org/web/20170702073345/http://www.paz.co.il/index.aspx?id=4523">
+                          מפת אתר</a></li>
+                          <li class="footer-nav-separator"><img src="images/menu_sep.png"/></li>
+                          <li><a href="contact.html">צור קשר</a></li>
+                          <li class="footer-nav-separator"><img src="images/menu_sep.png"/></li>
+                          <li><a href="https://web.archive.org/web/20170702073345/http://www.paz.co.il/index.aspx?id=4456">
+                            שטחי מסחר</a></li>
+                            <li class="footer-nav-separator"><img src="images/menu_sep.png"/></li>
+                            <li><a href="https://web.archive.org/web/20170702073345/http://www.paz.co.il/index.aspx?id=4600">
+                              הסדר פשרה בתובענה הייצוגית בעניין הסדר פזומט</a></li>
+              </ul>
+            </footer>
     </div>
+    
 </body>
 </html>
